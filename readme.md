@@ -2,12 +2,14 @@
 
 This repository contains source code underlying our [empirical analysis of traceability in the Monero blockchain](https://arxiv.org/pdf/1704.04299.pdf).
 
-Reproducing the analysis involves the following steps
+Reproducing the deducibility analysis involves the following steps:
 
 1. Export blockchain data from a fully synchronized Monero node
 2. Import the data into a Neo4j database using the Neo4j batch importer
 3. Create database indices and run the Sudoku algorithm
 4. Querying the database
+
+This repository does not contain the simulation of the different mixin-sampling procedures. It can be found at [kvnl33/monero-simulations](https://github.com/kvnl33/monero-simulations) instead.
 
 
 ## 1. Monero Blockchain Data Export
